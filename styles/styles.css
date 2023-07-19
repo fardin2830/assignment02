@@ -365,10 +365,15 @@ line-height: 30px; /* 166.667% */
     height: 40px;
     background-color: white;
     align-items: center;
-    margin: 2px;
+    margin: 10px;
+}
+.template>h1{
+    font-size: 1rem;
 }
 .template:hover{
-    border: 2px solid #FF42A5;
+    /* width: calc( max-content - 20px ); */
+    /* font-size: .9rem; */
+    border: 1px solid #FF42A5;
     color: #FF42A5;
     transition: .1s;
 }
@@ -429,5 +434,78 @@ footer{
 
 /* For Mobile  */
 @media screen and (max-width:425px) {
+    .nav-all{
+        display: flex;
+        flex-direction: column;
+
     
+    }
+    .logo{
+        margin: auto;
+    }
+    .logo-description{
+        flex-direction: column;
+    }
+    .logo-description-title{
+        margin: 0;
+    }
+    /* Nav done for Mobile  */
+    .main-one-all{
+        display: flex;
+        flex-direction: column-reverse;
+        /* border: 1px solid green; */
+    }
+    .main-one-description{
+        width: 100%;
+        border: 1px solid brown;
+        padding: 0;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .main-one-description-all{
+        width: 90vw;
+        border: 1px solid green;
+    }
+    .main-one-img{
+    }
+    .main-one-img img{
+        width: 40vw;
+        height: 80vh;
+        right: 0;
+    }
+    .goat-title{
+        padding-bottom: 0;
+        /* border: 1px solid khaki; */
+    }
+    .goat-title h2{
+        color: #0B0223;
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .goat-title h1{
+        margin: 0;
+        font-size: 5.93rem;
+        font-weight: 800;
+        background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .goat-icon{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid black; */
+    }
+    .goat-icon > h6 {
+        /* border: 2px solid greenyellow; */
+        margin: 0;
+    }
+    .goat-icon > h6 > svg{
+        /* border: 1px solid saddlebrown; */
+        padding: 0;
+    }
 }
